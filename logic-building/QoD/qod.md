@@ -36,7 +36,19 @@ console.log(getLength([10, 11, 12, 13]));
 3. Write a function that generates a secret code from a given string, by shifting characters of the alphabet by N places. Example:
 - Input: encodeString("neogcamp", 2) ––> Output: pgqiecor
 - Explanation: 2 represents shifting alphabets by 2 places. a –> c, b –> d, c –> e and so on.
+
 4. Given length of a regular hexagon, your function should return area of the hexagon.
+```javascript
+const hexagonArea = (side) => {
+  const hexagonConst = (3 * Math.sqrt(3)) / 2;
+  const resultArea = (hexagonConst * side ** 2).toFixed(2);
+  return resultArea;
+};
+
+console.log(hexagonArea(5));
+```
+
+
 5. Given an array and an item, your function should return the index at which the item is present.
 6. Given a sentence, return a sentence with first letter of all words as capital.
 7. Given a sentence, your functions should return the number of words in the sentence.
