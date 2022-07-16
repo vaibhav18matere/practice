@@ -22,6 +22,17 @@ const getLength = (arr) => {
 console.log(getLength([11, 22, 33, 44, 55]));
 ```
 
+```javascript
+const getLength = (arry) => {
+  for (var i = 0; arry[i] !== undefined; i++)
+ // here we used var instead of let, so the scope is global here
+//  also we are returning i value after the for block scope
+  return i;
+};
+
+console.log(getLength([10, 11, 12, 13]));
+```
+
 3. Write a function that generates a secret code from a given string, by shifting characters of the alphabet by N places. Example:
 - Input: encodeString("neogcamp", 2) ––> Output: pgqiecor
 - Explanation: 2 represents shifting alphabets by 2 places. a –> c, b –> d, c –> e and so on.
