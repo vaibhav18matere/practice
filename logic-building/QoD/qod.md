@@ -1,5 +1,27 @@
 1. Given a and b, your function should return the value of a^b
+```javascript
+Math.pow(a, b)
+```
+```javascript
+a**b
+```
+
 2. Given an array, your function should return the length of the array.
+```javascript
+ arr.length;
+```
+
+```javascript
+const getLength = (arr) => {
+  let leng = 0;
+  for (let i = 0; arr[i] !== undefined; i++) {
+    leng++;
+  }
+  return leng;
+};
+console.log(getLength([11, 22, 33, 44, 55]));
+```
+
 3. Write a function that generates a secret code from a given string, by shifting characters of the alphabet by N places. Example:
 - Input: encodeString("neogcamp", 2) ––> Output: pgqiecor
 - Explanation: 2 represents shifting alphabets by 2 places. a –> c, b –> d, c –> e and so on.
