@@ -41,7 +41,7 @@ console.log(getLength([10, 11, 12, 13]));
 ```javascript
 const hexagonArea = (side) => {
   const hexagonConst = (3 * Math.sqrt(3)) / 2;
-  const resultArea = (hexagonConst * side ** 2).toFixed(2);
+  const resultArea = (hexagonConst * Math.pow(side, 2)).toFixed(2);
   return resultArea;
 };
 
