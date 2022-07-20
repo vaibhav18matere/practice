@@ -15,6 +15,18 @@
 - What is `Semantic html` ? name few.
 - Different ways to hide the text or elements ?
 - What is difference between `undefined` and `undeclared` and `null`?
+  - undefined occurs when a variable has been declared using var, let or const but isn’t given a value.
+  - undeclared occurs when a variable which hasn’t been declared using var, let or const is being tried to access.
+```javascript
+var b;
+console.log(b);
+// b is undefined
+```
+```javascript
+a = 5;
+console.log(a);
+// error : a is not defined
+```
 - Why going with traditional function in object, why not arrow function..
 - What is use of `arrow functions` over normal functions
 - What is `Implicit binding` ?
