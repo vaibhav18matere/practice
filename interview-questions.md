@@ -12,10 +12,10 @@
 - Center a div.
 - Types of position properties in css
 - Difference between fixed and sticky
-- What is Semantic html ? name few.
+- What is `Semantic html` ? name few.
 - Different ways to hide the text or elements ?
-- What is difference between undefined and undeclared and null?
+- What is difference between `undefined` and `undeclared` and `null`?
 - Why going with traditional function in object, why not arrow function..
-- What is use of arrow functions over normal functions
-- What is Implicit binding ?
-- What do you understand by hoisting? explain it with example
+- What is use of `arrow functions` over normal functions
+- What is `Implicit binding` ?
+- What do you understand by `hoisting`? explain it with example
