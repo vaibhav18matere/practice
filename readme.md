@@ -1,1 +1,1 @@
-#### practice questions for javascript and react
+### JavaScript, React interview questions, problem solving, logic building questions
