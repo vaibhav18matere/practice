@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+.employee_component{
+background-color: aliceblue;
+margin: 1rem;
+padding: 0.5rem;
+width: fit-content;
+cursor: pointer;
+border-radius: 5px;
+}
