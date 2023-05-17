@@ -85,3 +85,41 @@ export const ConditionalDisableBtn = () => {
   );
 };
 ```
+
+4.  update parent state from child
+```javascript
+import { useState } from "react";
+import { Child } from "./Child";
+
+const Parent = () => {
+  const [text, setText] = useState("initial text");
+
+  return (
+    <>
+      <section>
+        <h3>Parent Component</h3>
+        <div> update parent state from child</div>
+        <h2>{text}</h2>
+      </section>
+      <Child setText={setText} />
+    </>
+  );
+};
+
+export default Parent;
+
+```
+```javascript
+export const Child = ({ setText }) => {
+  const clcikHandler = () => {
+    setText("changed.....!!");
+  };
+  return (
+    <section>
+      <h3>Child Component</h3>
+      <button onClick={clcikHandler}>Click to update parent state</button>
+    </section>
+  );
+};
+
+```
