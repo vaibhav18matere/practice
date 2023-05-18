@@ -155,3 +155,38 @@ export const ChildComponent2 = () => {
         <ChildComponent2 />
       </ParentComponent>
 ```
+6. Fetch Data from API
+```javascript
+import React, { useState, useEffect } from "react";
+export const FetchData = () => {
+  const [userData, setUserData] = useState({});
+
+  const { name, UserName, email, phone, website } = userData;
+
+  const dataUrl = "https://jsonplaceholder.typicode.com/users/1";
+
+  const getUserData = async () => {
+    const response = await fetch(dataUrl);
+    const jsonData = await response.json();
+    // console.log(jsonData);
+    setUserData(jsonData);
+  };
+
+  useEffect(() => {
+    getUserData();
+  }, []);
+
+  return (
+    <div className="data-from-api">
+      <h3>Fetch data from the API</h3>
+      <div>Name : {name} </div>
+      <div>UserName :{UserName} </div>
+      <div>Email : {email} </div>
+      <div>Phone : {phone} </div>
+      <div>Website : {website} </div>
+      <small>bonus : read about axios</small>
+    </div>
+  );
+};
+
+```
