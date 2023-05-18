@@ -123,3 +123,35 @@ export const Child = ({ setText }) => {
 };
 
 ```
+5. react composition - add child components inside parent component
+
+```javascript
+// ParentChild.jsx
+export const ParentComponent = ({ children }) => {
+  return (
+    <>
+      <div className="parent">
+        <h1>Parent Component</h1>
+        {children}
+        <small>bonus : read more about "react composition"</small>
+      </div>
+    </>
+  );
+};
+
+export const ChildComponent1 = () => {
+  return <div>Child Component 1</div>;
+};
+
+export const ChildComponent2 = () => {
+  return <div>Child Component 2</div>;
+};
+
+```
+```javascript
+// App.js
+      <ParentComponent>
+        <ChildComponent1 />
+        <ChildComponent2 />
+      </ParentComponent>
+```
