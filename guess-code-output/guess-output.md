@@ -128,3 +128,21 @@ function student(id, name) {
 console.log(new student(1, "Vaibhav").id);
 // undefined
 ```
+10. 
+```jsx
+Boolean("false") === Boolean(false)
+```
+- Explanation:
+- In JavaScript, the Boolean() function is used to convert a value into its corresponding boolean representation. When the argument passed to the Boolean() function is a non-empty string, it will always evaluate to true. This is because any non-empty string is considered truthy in JavaScript.
+
+- In this case, the argument passed to the Boolean() function is the string "false". Since it is a non-empty string, the Boolean() function will return true.
+
+- On the other hand, the boolean value false is a literal value representing the boolean false.
+
+- Comparing the two expressions:
+
+- Boolean("false") will evaluate to true because the string "false" is truthy.
+- Boolean(false) will evaluate to false because false is already a boolean value.
+- Therefore, the comparison Boolean("false") === Boolean(false) is equivalent to true === false, which is false.
+
+- So, the correct answer is false, not true.
