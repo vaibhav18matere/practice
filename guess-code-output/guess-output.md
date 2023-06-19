@@ -209,3 +209,25 @@ array.splice(0, array.length);
 -  Plugins
 -  Development server
 -  Asset management
+
+19. What will be display on page ?
+```jsx
+export default function App() {
+  const [loading, setLoading] = useState(true);
+  const load = () => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  };
+
+  if (loading) {
+    return <h1>Loading...</h1>;
+  }
+   return (
+    <div className="App">
+      <h1>Complete</h1>
+    </div>
+  );
+}
+// loading...
+```
