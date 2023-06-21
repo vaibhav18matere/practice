@@ -3,7 +3,7 @@ import Axios from "axios";
 import { useState, useEffect } from "react";
 
 function App() {
-  const apiUrl = "https://dummyjson.com/products";
+  const apiUrl = "https://dummyjson.com/products?limit=100";
 
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
@@ -59,4 +59,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
