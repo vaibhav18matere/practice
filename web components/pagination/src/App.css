@@ -45,3 +45,15 @@
 .pagination__selected {
   background-color: rgb(220, 220, 220);
 }
+
+button {
+  transition-duration: 0.4s;
+  padding: 0.25rem;
+  margin: 1rem
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
