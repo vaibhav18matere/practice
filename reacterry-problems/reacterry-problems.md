@@ -43,10 +43,40 @@ const removeWhitespaces = (string) => {
 var arr = [1, 2, 3, 4];
 
 const reversedArr = (arr) => {
-  console.log(arr.reverse());
+  arr.reverse();
 };
 
 reversedArr(arr);
+
+// Time: O(n)
+// Space: O(n)
+```
+
+```js
+// solution
+
+const arr = [1, 2, 3, 4];
+const arr1 = ["vaibhav"];
+const arr2 = [];
+const arr3 = ["apple", "banana", "orange"];
+const arr4 = [
+  { name: "Vaibhav", age: 25 },
+  { name: "Shubham", age: 23 }
+];
+
+const reversedArr = (arr) => {
+  const newArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    newArr.push(arr[i]);
+  }
+  return newArr;
+};
+
+console.log(reversedArr(arr));
+console.log(reversedArr(arr1));
+console.log(reversedArr(arr2));
+console.log(reversedArr(arr3));
+console.log(reversedArr(arr4));
 
 // Time: O(n)
 // Space: O(n)
