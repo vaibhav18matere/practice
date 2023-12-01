@@ -38,7 +38,8 @@ const removeWhitespaces = (string) => {
 ```
 
 ```js
-// solution
+
+// solution :
 
 var arr = [1, 2, 3, 4];
 
@@ -53,7 +54,7 @@ reversedArr(arr);
 ```
 
 ```js
-// solution
+// solution :
 
 const arr = [1, 2, 3, 4];
 const arr1 = ["vaibhav"];
@@ -81,3 +82,41 @@ console.log(reversedArr(arr4));
 // Time: O(n)
 // Space: O(n)
 ```
+
+### 3. Write a simple App component that returns an input field of type text. Users can interact with the input field to type in any string they want. You’re meant to store this string in local storage so that every time when the page reloads it pre-fills the input field with the latest known value for the users.
+
+```jsx
+import React, { useState } from 'react';
+
+const App = () => {
+  const [value, setValue] = useState(localStorage.getItem('inputValue') || '');
+
+  const onChangeHandler = (e) => {
+    setValue(e.target.value);
+    localStorage.setItem('inputValue', e.target.value);
+  };
+
+  return (
+    <div>
+      <input
+        data-testid="input-id"
+        type="text"
+        value={value}
+        onChange={onChangeHandler}
+      />
+    </div>
+  );
+};
+
+export default App;
+
+
+// approach :
+
+// useState creates a state variable value and a function setValue to update the value. The initial value of value the cached inputValue from local storage (if exists) or an empty string.
+
+// The handleChange function is called every time the user types into the input field. It updates the value of value by calling setValue and sets the same value in local storage under the key "inputValue".
+
+// Finally, the component returns a JSX element that renders an input field with the value of value, and an onChange handler to call handleChange when the user types into the input field.
+```
+
