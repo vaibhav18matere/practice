@@ -1,0 +1,32 @@
+body{
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container{
+     padding: 10px;
+}
+
+button{
+  color: black;
+  font-size: 1rem;
+  padding: 0.25rem;
+  margin: 0.15rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
+#counter-value {
+  padding: 0.8rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+input {
+  width: 6rem;
+  height: 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
