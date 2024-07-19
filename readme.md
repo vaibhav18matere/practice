@@ -1,1 +1,1 @@
-### JavaScript, React interview questions, problem solving, logic building questions
+### A central repository to practice DSA, JavaScript, React; almost everything around problem solving and logic building
