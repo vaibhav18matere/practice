@@ -1,0 +1,1 @@
+### Solving JavaScript basic [leetcode problems](https://leetcode.com/studyplan/30-days-of-javascript/) find [solutions of github repo]() here 
