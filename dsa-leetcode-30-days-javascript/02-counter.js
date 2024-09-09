@@ -23,10 +23,10 @@
 var createCounter = function (init) {
      let counter = init;
      const increment = () => ++counter;
+     // writting Es6 default return type removing {} and return keyword
 
-     const decrement = () => {
-          return --counter;
-     };
+     const decrement = () => --counter;
+
      const reset = () => {
           counter = init; // because of hoisting
           return counter;
