@@ -20,28 +20,16 @@
 // Explanation: counter() initially returns - 2. Then increases after each sebsequent call.
 
 
-var createCounter = function (init) {
-     let counter = init;
-     const increment = () => ++counter;
-     // writting Es6 default return type removing {} and return keyword
-
-     const decrement = () => --counter;
-
-     const reset = () => {
-          counter = init; // because of hoisting
-          return counter;
+var createCounter = function (n) {
+     let count = n;
+     return function () {
+          return count++
      };
-
-     return {
-          increment,
-          decrement,
-          reset
-     }
 };
 
-/**
- * const counter = createCounter(5)
- * counter.increment(); // 6
- * counter.reset(); // 5
- * counter.decrement(); // 4
- */
+const counter = createCounter(10);
+
+counter()
+counter()
+counter()
+counter()
