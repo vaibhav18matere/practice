@@ -22,21 +22,21 @@
 
 var createCounter = function (init) {
      let counter = init;
-     function increment() {
+     const increment = () => {
           return ++counter;
      };
-     function decrement() {
+     const decrement = () => {
           return --counter;
      };
-     function reset() {
+     const reset = () => {
           counter = init; // because of hoisting
           return counter;
      };
 
      return {
-          increment: increment,
-          decrement: decrement,
-          reset: reset
+          increment,
+          decrement,
+          reset
      }
 };
 
