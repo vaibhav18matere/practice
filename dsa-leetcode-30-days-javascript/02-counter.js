@@ -22,9 +22,8 @@
 
 var createCounter = function (init) {
      let counter = init;
-     const increment = () => {
-          return ++counter;
-     };
+     const increment = () => ++counter;
+
      const decrement = () => {
           return --counter;
      };
