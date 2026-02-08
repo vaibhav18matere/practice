@@ -26,3 +26,9 @@ print(tea_varieties)
 tea_varieties.pop()
 
 print(tea_varieties)
+
+names = ["Vaibhav", "Shubham", "Prasad", "Omkar", "Siddhant"]
+
+names.remove("Vaibhav")
+
+print(names)
