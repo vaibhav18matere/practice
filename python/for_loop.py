@@ -22,3 +22,7 @@ else:
 tea_varieties.append("E")
 
 print(tea_varieties)
+
+tea_varieties.pop()
+
+print(tea_varieties)
