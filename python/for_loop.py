@@ -18,3 +18,9 @@ if "D" in tea_varieties:
     print("D is available")
 else:
     print("D is NOT available")
+
+# Find squares of numbers from 0 to 10
+
+squared_nums = [x**2 for x in range(11)]
+
+print(squared_nums)
