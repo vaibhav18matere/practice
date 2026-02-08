@@ -32,3 +32,9 @@ names = ["Vaibhav", "Shubham", "Prasad", "Omkar", "Siddhant"]
 names.remove("Vaibhav")
 
 print(names)
+
+ages = [10, 15, 20, 25, 30]
+
+ages.insert(1, 5)
+
+print(ages)
