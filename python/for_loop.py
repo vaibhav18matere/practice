@@ -18,3 +18,7 @@ if "D" in tea_varieties:
     print("D is available")
 else:
     print("D is NOT available")
+
+tea_varieties.append("E")
+
+print(tea_varieties)
