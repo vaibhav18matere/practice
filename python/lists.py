@@ -21,3 +21,9 @@ ages = [10, 15, 20, 25, 30]
 ages.insert(1, 5)
 
 print(ages)
+
+# Find squares of numbers from 0 to 10
+
+squared_nums = [x**2 for x in range(11)]
+
+print(squared_nums)
