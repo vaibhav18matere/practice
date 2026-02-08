@@ -12,3 +12,9 @@ for y in range(1, 10, 2):
     print(y, y*"#")
 
 
+tea_varieties = ["A", "B", "C"]
+
+if "D" in tea_varieties:
+    print("D is available")
+else:
+    print("D is NOT available")
