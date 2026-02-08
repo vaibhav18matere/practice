@@ -18,23 +18,3 @@ if "D" in tea_varieties:
     print("D is available")
 else:
     print("D is NOT available")
-
-tea_varieties.append("E")
-
-print(tea_varieties)
-
-tea_varieties.pop()
-
-print(tea_varieties)
-
-names = ["Vaibhav", "Shubham", "Prasad", "Omkar", "Siddhant"]
-
-names.remove("Vaibhav")
-
-print(names)
-
-ages = [10, 15, 20, 25, 30]
-
-ages.insert(1, 5)
-
-print(ages)
