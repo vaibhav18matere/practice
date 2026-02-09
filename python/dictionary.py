@@ -30,3 +30,7 @@ for key, value in result.items():
 # Length of dictionary
 
 print(len(result))
+
+result.pop("Math")
+
+print(result)
