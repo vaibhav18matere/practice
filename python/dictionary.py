@@ -26,3 +26,7 @@ result = {"English": 55, "Math": 65, "Science": 75}
 
 for key, value in result.items():
     print(key, value)
+
+# Length of dictionary
+
+print(len(result))
