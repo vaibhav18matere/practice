@@ -5,3 +5,6 @@
 user = {"name":"vaibhav", "age":23, "gender":"male"}
 print(user)
 
+print(user.get("name"))
+
+
