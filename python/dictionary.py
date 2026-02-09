@@ -10,8 +10,19 @@ print(user.get("name"))
 new_age = user["age"] = 28
 print(new_age)
 
+# Looping over a dictionary
+
 for x in user:
-    print('key name is', x)
+    print('key=>', x)
+
+# Accessing both key and value
 
 for y in user:
     print(y, user[y])
+
+
+# Better way of looping over a dictionary
+result = {"English": 55, "Math": 65, "Science": 75}
+
+for key, value in result.items():
+    print(key, value)
