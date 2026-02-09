@@ -31,8 +31,19 @@ for key, value in result.items():
 
 print(len(result))
 
+# pop()
 result.pop("Math")
 
 print(result)
 
-print(result.result.popitem())
+# popitem()
+print(result.popitem())
+
+# Make a new dictionary
+default_keys = ["good", "better", "best", "excellent"]
+
+default_value = "I am"
+
+new_dictionary = dict.fromkeys(default_keys, default_value)
+
+print(new_dictionary)
