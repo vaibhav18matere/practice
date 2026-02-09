@@ -34,3 +34,5 @@ print(len(result))
 result.pop("Math")
 
 print(result)
+
+print(result.result.popitem())
